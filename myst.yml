@@ -18,6 +18,9 @@ site:
   template: book-theme
   options:
     logo_text: Data Mining Class
+  base_url: https://mfarhancode.github.io/pendata
   parts:
     footer: footer.md
+
+  
 
