@@ -9,7 +9,7 @@ title: Penambangan Data (Data Mining)
 |  |  |
 |---|---|
 | **Mata Kuliah** | Penambangan Data (Data Mining) |
-| **Kelas** | A |
+| **Kelas** | B |
 | **Dosen Pengampu** | Bapak Mula'ab, S.Si., M.Kom. |
 | **Semester** | 4 (Empat) |
 | **Program Studi** | S1 Teknik Informatika |
