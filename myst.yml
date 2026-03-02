@@ -13,14 +13,10 @@ project:
         - file: pertemuan2/index
         - file: pertemuan3/index
 
-
 site:
   template: book-theme
+  base_url: /pendata
   options:
     logo_text: Data Mining Class
-  base_url: https://mfarhancode.github.io/pendata
   parts:
     footer: footer.md
-
-  
-
