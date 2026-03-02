@@ -1,0 +1,58 @@
+---
+title: Pertemuan 4 - Distribusi & Statistik Deskriptif
+---
+
+# Pertemuan 4 - Distribusi & Statistik Deskriptif
+
+Referensi: [Mulaab - Data Mining](https://mulaab.github.io/datamining/)
+
+---
+
+## Materi Utama
+
+- Mean, Median, Modus
+- Variansi dan Standar Deviasi
+- Skewness (kemencengan) dan Kurtosis
+- Boxplot dan IQR
+- Distribusi Normal dan histogram
+
+---
+
+## Catatan Kuliah
+
+*Tambahkan catatan kamu di sini menggunakan Markdown.*
+
+*Tips format:*
+- `**bold**` untuk tebal
+- `*italic*` untuk miring  
+- Tabel, gambar, blockquote semua didukung
+
+---
+
+## Implementasi
+
+:::{note}
+Tambahkan link Google Colab kamu:
+[Buka di Google Colab](https://colab.research.google.com/)
+:::
+
+```python
+# Tambahkan kode implementasi di sini
+print("Pertemuan 4")
+```
+
+---
+
+## Lampiran & File
+
+*Tambahkan screenshot dan file di sini.*
+
+Contoh menambahkan gambar:
+```
+![Deskripsi gambar](_images/nama_gambar.png)
+```
+
+Contoh menambahkan file download:
+```
+{download}`Download file <_downloads/nama_file.csv>`
+```

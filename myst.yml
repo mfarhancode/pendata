@@ -1,0 +1,23 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: e05344b4-1e6e-418b-a73a-2888c20cd09a
+  title: Data Mining Class
+  github: https://github.com/mfarhancode/pendata
+  toc:
+    - title: Data Mining Class
+      file: intro
+    - title: Pertemuan
+      children:
+        - file: pertemuan1/index
+        - file: pertemuan2/index
+        - file: pertemuan3/index
+
+
+site:
+  template: book-theme
+  options:
+    logo_text: Data Mining Class
+  parts:
+    footer: footer.md
+

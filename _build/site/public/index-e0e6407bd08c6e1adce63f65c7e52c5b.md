@@ -1,0 +1,53 @@
+---
+title: Pertemuan 1 - Pengantar Data Mining
+---
+
+# Pertemuan 1 - Pengantar Data Mining
+
+Referensi: [Mulaab - Data Mining](https://mulaab.github.io/datamining/)
+
+---
+
+## Materi Utama
+
+- Pengertian Data Mining
+- Mengapa Data Mining penting?
+- Tugas utama: Classification, Clustering, Association, Regression
+- Proses CRISP-DM
+
+---
+
+## Catatan Kuliah
+
+*Tambahkan catatan kamu di sini menggunakan Markdown.*
+
+---
+
+## Implementasi
+
+:::{note}
+Tambahkan link Google Colab kamu:
+[Buka di Google Colab](https://colab.research.google.com/)
+:::
+
+```python
+# Tambahkan kode implementasi di sini
+```
+
+---
+
+## Screenshot & Lampiran
+
+Letakkan gambar di folder `pertemuan1/` lalu tampilkan dengan:
+
+```
+{image} nama_gambar.png
+:alt: Deskripsi
+:width: 100%
+```
+
+Untuk file download, letakkan file di folder `pertemuan1/` lalu:
+
+```
+{download}`Nama file <nama_file.csv>`
+```
