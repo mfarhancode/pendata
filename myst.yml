@@ -15,7 +15,6 @@ project:
 
 site:
   template: book-theme
-  base_url: /pendata
   options:
     logo_text: Data Mining Class
   parts:
