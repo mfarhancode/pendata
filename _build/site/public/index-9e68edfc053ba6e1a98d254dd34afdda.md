@@ -194,8 +194,3 @@ In this implementation, I focused on calculating the dissimilarity between insta
 
 * **Tree Visualization**: By connecting the distance calculation to the **Hierarchical Clustering** widget, the relationships are visualized as a **Dendrogram** (a tree-like structure).
 * **Grouping**: The "branches" of the tree show how flowers with the lowest dissimilarity (closest to 0) are joined together first.
-
-### File Download
-
-- {download}`IRIS.csv <IRIS.csv>`
-- {download}`Orange File <tugas-pertemuan-3.ows>`

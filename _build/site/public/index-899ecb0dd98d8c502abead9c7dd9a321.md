@@ -144,15 +144,15 @@ highest : 1.0
 
 # Analysis of Mixed Data using Orange Data Mining
 
-To analyze datasets with mixed attributes (Nominal, Ordinal, and Numeric), a specific workflow is required to ensure each data type is processed correctly before calculating distances.
+To analyze datasets with mixed attributes (Nominal, Ordinal, and Numeric), a specific workflow is required to ensure each data type is processed correctly before calculating distances. [cite: 83, 84, 85]
 
 ### **Workflow Steps**
 
 * **File Widget**: Used to load the dataset and verify that Orange identifies the correct "Type" for each column (Numeric or Categorical).
 * **Edit Domain Widget**: Connect the **File** widget to **Edit Domain** to manually specify the order for **Ordinal** attributes and confirm **Nominal** types.
-* **Preprocess Widget**: Connect **Edit Domain** to **Preprocess** to apply **Normalization** (e.g., Min-Max to interval [0, 1]).
+* **Preprocess Widget**: Connect **Edit Domain** to **Preprocess** to apply **Normalization** (e.g., Min-Max to interval [0, 1] or Z-score).
 * **Distances Widget**: Connect **Preprocess** to **Distances** and select a metric like **Euclidean** to calculate the dissimilarity between objects.
-* **Distance Matrix Widget**: Connect **Distances** to this widget to view the numerical **Dissimilarity Matrix**. [cite: 13, 17, 58]
+* [cite_start]**Distance Matrix Widget**: Connect **Distances** to this widget to view the numerical **Dissimilarity Matrix**. [cite: 13, 17, 58]
 * **Hierarchical Clustering Widget**: Connect **Distances** to this widget to visualize the relationships through a dendrogram.
 
 ---
@@ -161,41 +161,16 @@ To analyze datasets with mixed attributes (Nominal, Ordinal, and Numeric), a spe
 
 #### **1. Data Type Configuration (Edit Domain)**
 
-![Edit Domain Configuration](edit-domain.png)
+![Edit Domain Configuration](image_993131.png)
 
 #### **2. Normalization Settings (Preprocess)**
 
-![Preprocess Normalization](normalization.png)
+![Preprocess Normalization](image_9930ef.png)
 
 #### **3. Normalized Data Output**
 
-![Normalized Data Result](normalized-resutl.png)
+![Normalized Data Result](image_992267.png)
 
 #### **4. Final Analysis Workflow**
 
-![Final Workflow Canvas](workflow.png)
-
-# Specific Case Implementation: Iris Dataset
-
-In this implementation, I focused on calculating the dissimilarity between instances of the Iris dataset using numeric distance metrics. The dataset contains 150 instances and 4 numeric variables.
-
-### **Implementation Steps**
-
-* **Numeric Feature Selection**: I utilized the four physical measurements—sepal length, sepal width, petal length, and petal width—as the primary dimensions for comparison.
-* **Normalization**: To ensure all features contributed equally to the distance, I applied **Min-Max Normalization** via the **Preprocess** widget, scaling all values to the **[0, 1] range**.
-* **Metric Selection**: I selected the **Euclidean Distance** metric. This measures the "straight-line" difference between flowers based on their physical dimensions.
-* **Matrix Generation**: The result is a **Dissimilarity Matrix** where each cell $d(i, j)$ represents the calculated difference between two specific Iris flowers.
-
-
-
----
-
-### **Observation: Hierarchical Clustering**
-
-* **Tree Visualization**: By connecting the distance calculation to the **Hierarchical Clustering** widget, the relationships are visualized as a **Dendrogram** (a tree-like structure).
-* **Grouping**: The "branches" of the tree show how flowers with the lowest dissimilarity (closest to 0) are joined together first.
-
-### File Download
-
-- {download}`IRIS.csv <IRIS.csv>`
-- {download}`Orange File <tugas-pertemuan-3.ows>`
+![Final Workflow Canvas](image_8f3520.png)

@@ -1,0 +1,98 @@
+---
+title: Pertemuan 3 - Mengukur Jarak
+---
+
+# Pertemuan 3 - Mengukur Jarak
+
+Referensi: [Mulaab - Data Mining](https://mulaab.github.io/datamining/)
+
+---
+<!--
+## Materi Utama
+
+- Hubungan Data Mining dengan Data Science
+- Peran Data Scientist
+- Tools: Python, R, Jupyter Notebook
+- Perbedaan Data Mining, Data Science, Machine Learning
+
+---
+
+## Catatan Kuliah
+
+*Tambahkan catatan kamu di sini menggunakan Markdown.*
+
+---
+
+## Implementasi
+
+:::{note}
+Tambahkan link Google Colab kamu:
+[Buka di Google Colab](https://colab.research.google.com/)
+:::
+
+```python
+# Tambahkan kode implementasi di sini
+```
+
+---
+
+## Screenshot & Lampiran
+
+Letakkan gambar di folder `pertemuan3/` lalu tampilkan dengan:
+
+```
+{image} nama_gambar.png
+:alt: Deskripsi
+:width: 100%
+```
+
+Untuk file download, letakkan file di folder `pertemuan3/` lalu:
+
+```
+{download}`Nama file <nama_file.csv>`
+```
+-->
+
+# Measuring Distance with Mixed Data Types
+
+In the real world, datasets aren't just one type of data. A customer database might have **Age** (Numeric), **Gender** (Binary), and **Membership Level** (Ordinal). [cite_start]You can't just subtract "Male" from "Female" or "Gold" from "Silver." [cite: 83, 84]
+
+[cite_start]To solve this, we use a weighted average of the distances of all attributes. [cite: 85] [cite_start]The goal is to get a single number between **0 and 1** that represents the total dissimilarity between two objects $i$ and $j$. [cite: 7]
+
+Here is how we handle the different types:
+* **Nominal/Binary**: We check for a match. If they are the same, the distance is **0**. [cite_start]If they are different, it is **1**. [cite: 86, 87]
+* [cite_start]**Numeric**: We normalize the data so every feature is on the same scale. [cite: 88, 49]
+* [cite_start]**Ordinal**: We rank them, map them to a **[0, 1]** range, and then treat them like numeric data. [cite: 89, 90, 91]
+
+---
+
+## 📝 Student Version (For Assignment)
+
+**Title: Measuring Distance with Mixed Data Types**
+
+[cite_start]In data mining, we often encounter datasets containing "Mixed Type" attributes, where Nominal, Binary, Numeric, and Ordinal data are all present in one table. [cite: 83, 84] To calculate the total distance between two objects, we cannot use a single formula like Euclidean distance alone. [cite_start]Instead, we must process each attribute based on its type and then combine them. [cite: 85]
+
+The general approach is to calculate the dissimilarity for each attribute $f$ ($d_{ij}^{(f)}$) and then average them. The rules I followed for each type are:
+* **Nominal & Binary Attributes**: These are categorical. If the values for two objects are the same, the distance is **0**. [cite_start]If they are different, the distance is **1**. [cite: 86, 87]
+* [cite_start]**Numeric Attributes**: Since numeric data can have very different scales, I must first normalize them using **Z-score** or **Min-Max** scaling to bring them into a comparable range. [cite: 49, 50, 88]
+* **Ordinal Attributes**: These have a specific order. [cite_start]I replace the labels with their ranks, map these ranks to a range between **0 and 1**, and then treat the result as numeric data. [cite: 43, 45, 46, 89]
+
+[cite_start]By combining these individual distances, we get a final dissimilarity value that accurately reflects how different two records are, even when their features are of different types. [cite: 85]
+
+---
+
+## 🐍 Python Implementation
+
+### 1. Min-Max Normalization
+[cite_start]This technique scales numeric data into a fixed range of **[0, 1]**. [cite: 7, 46]
+
+```python
+def min_max_technique(list_data):
+    min_data = min(list_data)
+    max_data = max(list_data)
+    for x in list_data:
+        val = (x - min_data) / (max_data - min_data)
+        print(x, ':', val)
+
+min_max_technique([1200, 1500, 1000, 1800])
+'''
