@@ -158,20 +158,34 @@ To analyze datasets with mixed attributes (Nominal, Ordinal, and Numeric), a spe
 ---
 
 ### **Visual Workflow & Implementation**
+### **For IRIS Data**
 
-#### **1. Data Type Configuration (Edit Domain)**
+#### **Data Type Configuration (Edit Domain)**
 
 ![Edit Domain Configuration](edit-domain.png)
 
-#### **2. Normalization Settings (Preprocess)**
+#### **Normalization Settings (Preprocess)**
 
 ![Preprocess Normalization](normalization.png)
 
-#### **3. Normalized Data Output**
+#### **Normalized Data Output**
 
 ![Normalized Data Result](normalized-resutl.png)
 
-#### **4. Final Analysis Workflow**
+
+### **For Students Data**
+#### **Normalization Settings (Preprocess)**
+
+![Preprocess Normalization](students-normalization.png)
+
+#### **Normalized Data Output**
+
+![Normalized Data Result](students-normalized-resutl.png)
+#### **Distance Metric**
+
+![Data Result](students-distance-matrix.png)
+
+#### **Final Analysis Workflow**
 
 ![Final Workflow Canvas](workflow.png)
 
@@ -197,5 +211,6 @@ In this implementation, I focused on calculating the dissimilarity between insta
 
 ### File Download
 
+- {download}`student_habits_performance.csv <student_habits_performance.csv>`
 - {download}`IRIS.csv <IRIS.csv>`
 - {download}`Orange File <tugas-pertemuan-3.ows>`
