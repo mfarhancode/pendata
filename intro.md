@@ -66,8 +66,9 @@ mengekstraksi pengetahuan dari berbagai database besar.
 - [Pertemuan 1 - Pengantar Data Mining](pertemuan1/index)
 - [Pertemuan 2 - Memahami Data](pertemuan2/index)
 - [Pertemuan 3 - Pengantar Data Science](pertemuan3/index)
+- [Pertemuan 4 - Finding Missing Value](pertemuan4/index)
+<!-- - [Pertemuan 4 - Finding Missing Value](pertemuan4/index) -->
 <!-- 
-- [Pertemuan 4 - Distribusi & Statistik Deskriptif](pertemuan4/index)
 - [Pertemuan 5 - Mengukur Jarak/Similaritas Data](pertemuan5/index)
 - [Pertemuan 6 - Praproses Data](pertemuan6/index)
 - [Pertemuan 7 - Modeling](pertemuan7/index)
