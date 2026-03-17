@@ -13,6 +13,7 @@ project:
         - file: pertemuan2/index
         - file: pertemuan3/index
         - file: pertemuan4/index
+        - file: assignment_wknn/index
 
 site:
   template: book-theme

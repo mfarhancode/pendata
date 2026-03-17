@@ -67,6 +67,7 @@ mengekstraksi pengetahuan dari berbagai database besar.
 - [Pertemuan 2 - Memahami Data](pertemuan2/index)
 - [Pertemuan 3 - Pengantar Data Science](pertemuan3/index)
 - [Pertemuan 4 - Finding Missing Value](pertemuan4/index)
+- [Assignment — Missing Values (WKNN) & Data Normalization](assignment_wknn/index)
 <!-- - [Pertemuan 4 - Finding Missing Value](pertemuan4/index) -->
 <!-- 
 - [Pertemuan 5 - Mengukur Jarak/Similaritas Data](pertemuan5/index)
