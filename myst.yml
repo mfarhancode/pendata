@@ -14,6 +14,7 @@ project:
         - file: pertemuan3/index
         - file: pertemuan4/index
         - file: assignment_wknn/index
+        - file: PCA/index
 
 site:
   template: book-theme
