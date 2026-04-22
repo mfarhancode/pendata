@@ -309,5 +309,3 @@ The KNN algorithm was successfully applied to the Soil Fertility Classification 
 4. All K values from 1 to 20 achieved identical 100% cross-validation accuracy, confirming the strong separability of the data.
 
 ---
-
-*Analysis by: Data Mining Class | Dataset: Soil Fertility Classification (2,000 samples)*
