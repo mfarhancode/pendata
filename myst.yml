@@ -15,6 +15,7 @@ project:
         - file: pertemuan4/index
         - file: assignment_wknn/index
         - file: Soil_Fertility_Classification/index
+        - file: Data_Analysis_Using_Linear_Regression/index
 
 site:
   template: book-theme
