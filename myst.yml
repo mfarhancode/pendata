@@ -17,6 +17,7 @@ project:
         - file: Soil_Fertility_Classification/index
         - file: Data_Analysis_Using_Linear_Regression/index
         - file: Rate_forecasting_Lahore/index
+        - file: Data_Analysis_B/index
 
 site:
   template: book-theme
